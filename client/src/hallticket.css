@@ -1,0 +1,253 @@
+.hallticket{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--white-color);
+    justify-content: space-between !important;
+}
+
+.hallticket-navbar{
+    height: 10vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.hallticket-btn-bar{
+    height: 10vh;
+    width: 100%;
+    flex-direction: row !important;
+
+}
+
+.hallticket-btn-bar .btn-bar button{
+    padding: 15px 20px;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-bar{
+    width: 60%;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+}
+
+.student-details-box{
+    min-height: 150px;
+    width: 100%;
+}
+
+.student-details{
+    width: 60%;
+    height: 100%;
+    
+}
+
+.left{
+    width: 75%;
+    height: 150px;
+    float: left;
+}
+.left-details{
+    height: 100%;
+    width: 35%;
+    float: left;
+}
+.right-details{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.heading-list, .data-list{
+    height: 100%;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    float: left;
+}
+.data-list li{
+    font-weight: bold;
+
+}
+.data-list li::before{
+    content: " : ";
+}
+li{
+    font-size: 14px;
+    list-style: none;
+}
+
+.right{
+    float: right;
+    height: 150px;
+    width: 130px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+.table-box{
+    width: 60%;
+    border: 1px solid black;
+    text-align: center;
+    border-spacing: 0;
+    margin-top: 20px;
+}
+.table-box tr{
+    height: 40px;
+    
+}
+
+th,tr,thead,tbody,td{
+    border: 1px solid rgb(99, 99, 99);
+}
+
+footer{
+    height: 10vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+    margin-top: 20px;
+}
+
+.class{
+    width: 100%;
+}
+
+
+.box{
+    height: 100vh;
+    width: 100%;
+    background-color: bisque;
+    padding: 20px;
+}
+
+.topbar{
+    height: 12vh;
+    width: 100%;
+    background-color: aliceblue;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+}
+
+.left-logo,.right-logo{
+    height: 100%;
+    width: 140px;
+}
+
+
+
+
+.hcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hcontent{
+    height: 100vh;
+    width: 100%;
+
+    
+}
+
+.htopcontent{
+    height: 12vh;
+    width: 100%;
+    flex-direction: column !important;
+    
+
+}
+
+.hcontent p{
+    margin-top: 5px;
+}
+
+.hdetails{
+    width: 100%;
+    height: 20vh;
+    padding: 20px 50px;
+    
+}
+.ruler{
+    height: 1px;
+    background-color: rgb(112, 110, 110);
+    width: 100%;
+    margin-bottom: 20px;
+}
+.hleft{
+    width: 75%;
+    height: 100%;
+}
+
+.hright{
+    width: 24%;
+    height: 100%;
+
+}
+
+.hright img{
+    width: 100%;
+    height: 100%;
+}
+
+.hleft ul{
+    height: 100%;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    flex-direction: column !important;
+
+}
+
+span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hsubjectlists{
+    margin-top: 20px;
+    width: 100%;
+    padding: 0px 50px;
+}
+
+.htable{
+    width: 100%;
+    height: 100%;
+    border-spacing: 0;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.htable tr{
+    height: 40px;
+}
+
+.eod{
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.sign{
+    width: 100%;
+    height: 25vh;
+
+    padding: 50px;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+}
+
+.signbox{
+    height: 16vh;
+    width: 22vh;
+    flex-direction: column !important;
+    justify-content: end !important;
+
+}
+
+.signbox img{
+    height: 60px;
+    margin-bottom: 10px;
+}

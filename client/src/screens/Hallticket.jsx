@@ -3,6 +3,8 @@ import { apiHelper } from '../utils/utils';
 import { useNavigate } from 'react-router-dom';
 import { reverseDate } from '../utils/validation';
 import { useReactToPrint,} from 'react-to-print';
+import { SignImg } from '../assets/images';
+import "../hallticket.css"
 
 function Hallticket() {
 
@@ -141,7 +143,69 @@ function Hallticket() {
         
         <div style={{display:"none"}}>
             <div ref={componentRef}>
-                Heie
+            <div className="htopcontent hcenter">
+            <h1 style={{fontSize:30}}> Sample University - Sample</h1>
+            <p style={{fontSize:20}}>Degree Examination - 2023</p>
+            <p style={{fontSize:20}}>Hallticket</p>
+          </div>
+
+          <div className="ruler"></div>
+
+          <div className="hdetails hcenter">
+            <div className="hleft">
+            <ul className="hcenter" style={{fontSize:20}}>
+                  <li style={{fontSize:16}}>Registration No :  <span>{data.regno}</span></li>
+                  <li style={{fontSize:16}}>Student Name : <span>{data.name}</span></li>
+                  <li style={{fontSize:16}}>Centre Code & Name :  <span>{data.centrecode}{" - "} {data.college}</span></li>
+                  <li style={{fontSize:16}}>Course Name : <span>{data.course}</span></li>
+                  <li style={{fontSize:16}}>Semester :  <span>{data.semester}</span></li>
+                </ul>
+            </div>
+            <div className="hright">
+              <img  src={data.image.file_data} />
+            </div>
+
+          </div>
+
+          <div className="hsubjectlists hcenter">
+          <table className='htable'>
+          <thead >
+            <tr>
+              <th>S. No</th>
+              <th>Subject Code</th>
+              <th>Subject Title</th>
+              <th>Exam Date</th>
+              <th>Exam Time</th>
+            </tr>
+          </thead>
+          <tbody >
+            {fsubject.map((items,i)=>{
+                return(
+                  <tr key={i}>
+                    <td >{i+1}</td>
+                    <td >{items.code}</td>
+                    <td>{items.title}</td>
+                    <td>{items.date}</td>
+                    <td>{items.time}</td>
+                  </tr>
+                )
+            })}
+          </tbody>
+    
+        </table>
+          </div>
+          <p className='eod hcenter'>--- End of Statement ---</p>
+            <div className="sign hcenter">
+              <div className="signbox hcenter">
+                <img src={SignImg} alt="" />
+                <h1 style={{fontSize:18}}>Principal Signature</h1>
+              </div>
+
+              <div className="signbox hcenter">
+                
+                <h1 style={{fontSize:18}}>Student Signature</h1>
+              </div>
+            </div>
             </div>
         </div>
 

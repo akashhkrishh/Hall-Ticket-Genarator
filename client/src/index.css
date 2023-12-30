@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.bg-main{
+    @apply bg-[#028ecf];
+}
+
+.border-main{
+    @apply border-[#028ecf];
+}
+
+.text-main{
+    @apply text-[#028ecf];
+}
+
+.input{
+    @apply w-full p-3 rounded-md border-2 outline-none focus:border-[#028ecf];
+}
+
+.button{
+    @apply p-3 rounded-md font-semibold bg-orange-500 text-white hover:bg-orange-600;
+}
+
+.active{
+    @apply font-semibold text-white hover:scale-100;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body::-webkit-scrollbar {
+    display: none;
+    
+  }

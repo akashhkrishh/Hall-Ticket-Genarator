@@ -13,6 +13,7 @@ function Hallticket() {
   const [subjectlist, setSubject] = useState([]);
   const [fsubject,setf] = useState([]);
   const componentRef = useRef();
+  const nav = useNavigate();
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
   });
@@ -53,7 +54,10 @@ function Hallticket() {
             <h1 className='text-white font-semibold'>Download Your Hallticket</h1>
         </div>
         <div className="flex justify-between pr-44 bg-white text-white pl-44 mb-3 items-center w-full">
-            <button className='p-2 pl-4 pr-4 bg-main rounded-md'>Goback</button>
+            <button onClick={()=>{
+                localStorage.removeItem('reg')
+                nav("/")
+            }} className='p-2 pl-4 pr-4 bg-main rounded-md'>Goback</button>
             <button onClick={handlePrint} className='p-2 pl-4 pr-4 bg-main rounded-md'>Download</button>
         </div>
         </div>

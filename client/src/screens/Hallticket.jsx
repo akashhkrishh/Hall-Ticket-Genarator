@@ -185,7 +185,7 @@ function Hallticket() {
                     <td >{i+1}</td>
                     <td >{items.code}</td>
                     <td>{items.title}</td>
-                    <td>{items.date}</td>
+                    <td>{reverseDate(items.date)}</td>
                     <td>{items.time}</td>
                   </tr>
                 )

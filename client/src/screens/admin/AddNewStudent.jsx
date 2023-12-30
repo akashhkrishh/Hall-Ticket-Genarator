@@ -95,7 +95,7 @@ function AddNewStudent() {
                 <div className="flex gap-5 h-[40%] ">
                     <label htmlFor='image' className="cursor-pointer flex justify-center items-center w-[30%]">
                         <img src={form.image == null ? UploadImg :URL.createObjectURL(form.image)} className='rounded-md border-2' style={{width:"100%"}} alt="" />
-                        <input type="file" id="image" autoComplete='off' required onChange={handleSChange} name='image' />
+                        <input type="file" id="image" autoComplete='off' required onChange={handleSChange} name='image' hidden />
                     </label>
                     <div className="flex flex-col gap-5 h-[100%] justify-between w-[70%] ">
                         <div className="flex gap-2 flex-col">

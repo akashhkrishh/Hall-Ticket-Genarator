@@ -20,6 +20,10 @@ function Hallticket() {
   
   useEffect(()=>{
     fetchData();
+    if(subjectlist.length != 0 && fsubject.length == 0){
+      const dta = subjectlist.filter(subject => data.subjects.includes(subject.code));
+      setf(dta);
+  }
   },[])
   
   const fetchData = () =>{
@@ -36,11 +40,12 @@ function Hallticket() {
         console.log(err.response.data)
     })
   }
+  if(subjectlist.length != 0 && fsubject.length == 0){
+    const dta = subjectlist.filter(subject => data.subjects.includes(subject.code));
+    setf(dta);
+}
 
-    if(subjectlist.length != 0 && fsubject.length == 0){
-        const dta = subjectlist.filter(subject => data.subjects.includes(subject.code));
-        setf(dta);
-    }
+    
 
 
 

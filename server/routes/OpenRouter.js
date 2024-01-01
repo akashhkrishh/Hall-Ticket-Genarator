@@ -9,8 +9,6 @@ router.post("/login",async(req,res)=>{
     const StudExists = await StudentModel.findOne({regno:regno})
     if(!StudExists)
         return res.status(404).json("Register no Doesn't Exists");
-
-    console.log(StudExists.dob == dob)
     if(StudExists.dob != dob)
         return res.status(404).json("Invalid Details");
     return res.status(200).json(StudExists);

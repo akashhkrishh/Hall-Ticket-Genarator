@@ -221,5 +221,4 @@ function Hallticket() {
     </div>
   )
 }
-
 export default Hallticket

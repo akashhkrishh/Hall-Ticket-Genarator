@@ -158,7 +158,7 @@ function Hallticket() {
             <p style={{fontSize:20}}>Hallticket</p>
           </div>
 
-          <div className="ruler"></div>
+          <div className="ruler border"></div>
 
           <div className="hdetails hcenter">
             <div className="hleft">
